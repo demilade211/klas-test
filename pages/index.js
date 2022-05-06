@@ -1,6 +1,10 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
+import Mic from '../components/Mic'
+import Name from '../components/Name'
+import StudentCard from '../components/StudentCard'
+import Link from 'next/link'
 
 export default function Home() {
   return (
@@ -11,59 +15,52 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className={styles.main}>
-        <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
-        </h1>
+      <header className={styles.header}>
+          <div className={styles['logo-container']}>
+            <Image src="/images/Vector.svg" alt="Vercel Logo" width={30} height={30} />
+            <span style={{marginLeft:"10px",position:"relative",bottom:"13px",fontWeight:"bold" }}>Klas</span>
+            <h3 style={{textAlign:"center",fontSize:"1.4rem"}}>JavaScript masterclass</h3>
+          </div>   
+      </header>
 
-        <p className={styles.description}>
-          Get started by editing{' '}
-          <code className={styles.code}>pages/index.js</code>
-        </p>
-
-        <div className={styles.grid}>
-          <a href="https://nextjs.org/docs" className={styles.card}>
-            <h2>Documentation &rarr;</h2>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
-
-          <a href="https://nextjs.org/learn" className={styles.card}>
-            <h2>Learn &rarr;</h2>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
-
-          <a
-            href="https://github.com/vercel/next.js/tree/canary/examples"
-            className={styles.card}
-          >
-            <h2>Examples &rarr;</h2>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
-
-          <a
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-          >
-            <h2>Deploy &rarr;</h2>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
-        </div>
+      <main >
+        <section className={styles['main-container']}>
+            <Name name="Alfred Martin"/>
+            <Mic/>
+        </section>
+        <section className={styles['students-container']}>
+          <StudentCard name="David Tommy" url="/images/man1.png"/>
+          <StudentCard name="Johnny Okta" url="/images/man2.png"/>
+          <StudentCard name="Mary Stephanie" url="/images/man3.png"/>
+          <StudentCard name="Juliet Kirill" url="/images/man4.png"/>
+          <StudentCard name="Ospan Ali" url="/images/man5.png"/>
+          <StudentCard name="Nathan Stark" url="/images/man6.png"/>
+        </section>
+        <section className={styles['pagination-container']}>
+          
+          
+            <Image src="/images/Vector(6).svg" alt="Vercel Logo" width={20} height={20} />
+            <span style={{fontSize:"30px",margin:"0px 50px",color:"#707070"}}>1/4</span>
+            <Image src="/images/Vector(5).svg" alt="Vercel Logo" width={20} height={20} />
+          
+          
+        </section>
       </main>
-
-      <footer className={styles.footer}>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <span className={styles.logo}>
-            <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
-          </span>
-        </a>
+      <footer className={styles['footer-container']}>
+        <div className={styles['button-container']}>
+          <Image src="/images/Group(3).svg" alt="Vercel Logo" width={30} height={30} />
+        </div>
+        <div className={styles['button-container']}>
+          <Image src="/images/Vector(4).svg" alt="Vercel Logo" width={40} height={40} />
+        </div>
+        <div className={styles['button-container']}>
+          <Link href="/chat"><Image src="/images/Group(2).svg" alt="Vercel Logo" width={40} height={40} /></Link>
+        </div>
+        <div style={{background: "#FF3D00"}} className={styles['button-container']}>
+          <Image src="/images/Vector(3).svg" alt="Vercel Logo" width={30} height={30} />
+        </div>
       </footer>
+
     </div>
   )
 }
