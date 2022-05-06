@@ -11,12 +11,12 @@ const chat = () => {
         </header>
         <section className={styles.tab}>
             <div>
-                <Image src="/images/Group(1).svg" alt="Vercel Logo" width={35} height={35} />
-                <span style={{margin:"0px 20px",fontSize:"1.4rem",position:"relative",bottom:"10px"}}>Chat</span>
+                <Image src="/images/Group(1).svg" alt="Vercel Logo" width={30} height={30} />
+                <span style={{margin:"0px 20px",fontSize:"1.2rem",position:"relative",bottom:"10px"}}>Chat</span>
             </div>
             <div>
-                <Image src="/images/Vector(2).svg" alt="Vercel Logo" width={35} height={35} />
-                <span style={{margin:"0px 20px",fontSize:"1.4rem",position:"relative",bottom:"10px"}}>Students</span>
+                <Image src="/images/Vector(2).svg" alt="Vercel Logo" width={30} height={30} />
+                <span style={{margin:"0px 20px",fontSize:"1.2rem",position:"relative",bottom:"10px"}}>Students</span>
             </div>
         </section>
         <footer className={styles['footer-container']}>
