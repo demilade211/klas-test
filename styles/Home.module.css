@@ -27,7 +27,7 @@
 }
 .name-container{
   width: auto;
-  height: 40px;
+  height: 10px;
   border-radius: 20px;
   background: linear-gradient(135deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0) 100%);
   display: flex;
@@ -35,7 +35,7 @@
   justify-content: center;
   color: white;
   padding: 20px;
-  font-size: 0.5rem;
+  font-size: 0.6rem;
 }
 
 .mic-container{
