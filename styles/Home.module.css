@@ -15,7 +15,7 @@
 }
 .main-container{
   width: 100%;
-  min-height: 400px;
+  min-height: 310px;
   background-image: url("/images/main.png");
   background-repeat: no-repeat;
   background-size: 100% 100%;
@@ -59,7 +59,7 @@
 }
 .students-card{
   border-radius: 20px;
-  height: 210px;
+  height: 180px;
   display: flex;
   justify-content: space-between;
   padding: 10px;
@@ -83,8 +83,8 @@
 .button-container{
   border: 1px solid #00000026;
   background: #FFFFFF;
-  width: 90px;
-  height: 90px;
+  width: 50px;
+  height: 50px;
   border-radius: 100%;
   display: flex;
   justify-content: center;

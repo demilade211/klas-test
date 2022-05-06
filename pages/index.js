@@ -40,7 +40,7 @@ export default function Home() {
           
           
             <Image src="/images/Vector(6).svg" alt="Vercel Logo" width={20} height={20} />
-            <span style={{fontSize:"30px",margin:"0px 50px",color:"#707070"}}>1/4</span>
+            <span style={{fontSize:"25px",margin:"0px 50px",color:"#707070"}}>1/4</span>
             <Image src="/images/Vector(5).svg" alt="Vercel Logo" width={20} height={20} />
           
           
@@ -48,16 +48,16 @@ export default function Home() {
       </main>
       <footer className={styles['footer-container']}>
         <div className={styles['button-container']}>
-          <Image src="/images/Group(3).svg" alt="Vercel Logo" width={30} height={30} />
+          <Image src="/images/Group(3).svg" alt="Vercel Logo" width={20} height={20} />
         </div>
         <div className={styles['button-container']}>
-          <Image src="/images/Vector(4).svg" alt="Vercel Logo" width={40} height={40} />
+          <Image src="/images/Vector(4).svg" alt="Vercel Logo" width={30} height={30} />
         </div>
         <div className={styles['button-container']}>
-          <Link href="/chat"><Image src="/images/Group(2).svg" alt="Vercel Logo" width={40} height={40} /></Link>
+          <Link href="/chat"><Image src="/images/Group(2).svg" alt="Vercel Logo" width={30} height={30} /></Link>
         </div>
         <div style={{background: "#FF3D00"}} className={styles['button-container']}>
-          <Image src="/images/Vector(3).svg" alt="Vercel Logo" width={30} height={30} />
+          <Image src="/images/Vector(3).svg" alt="Vercel Logo" width={20} height={20} />
         </div>
       </footer>
 
