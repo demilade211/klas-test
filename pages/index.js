@@ -40,7 +40,7 @@ export default function Home() {
           
           
             <Image src="/images/Vector(6).svg" alt="Vercel Logo" width={20} height={20} />
-            <span style={{fontSize:"25px",margin:"0px 50px",color:"#707070"}}>1/4</span>
+            <span style={{fontSize:"0.8rem",margin:"0px 50px",color:"#707070"}}>1/4</span>
             <Image src="/images/Vector(5).svg" alt="Vercel Logo" width={20} height={20} />
           
           
